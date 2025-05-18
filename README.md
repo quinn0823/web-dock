@@ -1,3 +1,11 @@
-# web-dock-bar
- 
-[Web Dock Bar](https://quinn0823.github.io/web-dock-bar) is used to quickly switch between pages.
+# Web Dock
+
+The [Web Dock](https://quinn0823.github.io/web-dock-bar) is a convenient place to access pages of my personal website—just like the Dock on the Mac desktop.
+
+---
+
+Updated Date: May 18, 2025
+
+The MIT License (MIT)
+
+Copyright (c) 2025 Jonathan Chiu
