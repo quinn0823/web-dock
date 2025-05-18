@@ -12,6 +12,8 @@ function urlChange(inPage) {
         outPage = "music.html";
     } else if(inPage == "website") {
         outPage = "website.html";
+    } else if(inPage == "abouot") {
+        outPage = "web-dock/about.html";
     }
     document.getElementById("frame").src="https://quinn0823.github.io/" + outPage;
 }
