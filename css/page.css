@@ -64,12 +64,16 @@ body {
     text-decoration: none;
     display: block;
 }
+#dock ul li.line a {
+    width: 3px;
+    height: 36px;
+}
 
 #dock ul li:hover {
     background-color: #6699cc;
     transition: 0.2s;
     cursor: pointer;
-} 
+}
 #dock ul li:hover svg {
     transition: 0.2s;
     color: #fff;
