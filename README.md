@@ -1,6 +1,6 @@
 # Web Dock
 
-The [Web Dock](https://quinn0823.github.io/web-dock-bar) is a convenient place to access pages of my personal website—just like the Dock on the Mac desktop.
+The [Web Dock](https://quinn0823.github.io/web-dock/) is a convenient place to access pages of my personal website—just like the Dock on the Mac desktop.
 
 ---
 
