@@ -44,20 +44,21 @@ Copyright (c) 2025 Jonathan Chiu -->
 			left: 0;
 			right: 0;
 			margin: 0 auto;
-			padding: var(--spacing-length);
+			padding: 0 var(--spacing-length);
 			display: grid;
 			grid-auto-flow: column;
 			column-gap: var(--spacing-length);
 			row-gap: 0;
 			list-style: none;
 			width: fit-content;
-			height: 36px;
+			height: 46px;
 			border-radius: 18px;
 			border: var(--border-width-length) solid var(--blue-dark);
 			background-color: var(--blue-light);
 		}
 
 		.dock li {
+			margin: var(--spacing-length) 0;
 			width: 30px;
 			height: 30px;
 			border: var(--border-width-length) solid var(--blue-dark);
@@ -71,12 +72,34 @@ Copyright (c) 2025 Jonathan Chiu -->
 		}
 
 		.dock li:hover {
+			/* margin-top: 3px;
+			width: 32px;
+			height: 32px;
+			line-height: 32px; */
 			color: #fff;
 			background-color: var(--blue-dark);
 		}
 
+		.dock li.folded {
+			margin: 10px 0;
+			width: var(--border-width-length);
+			height: 26px;
+			overflow: hidden;
+			border: 0;
+			border-radius: 1.5px;
+			background-color: var(--blue-dark);
+		}
+
+		.dock li.folded:hover {
+			margin: var(--spacing-length) 0;
+			width: 30px;
+			height: 30px;
+			border: var(--border-width-length) solid var(--blue-dark);
+			border-radius: 10px;
+		}
+
 		.dock hr {
-			margin: 5px 0 5px 0;
+			margin: 10px 0;
 			width: var(--border-width-length);
 			height: 26px;
 			border: 0;
@@ -90,7 +113,7 @@ Copyright (c) 2025 Jonathan Chiu -->
 		}
 
 		.dock hr.clickable:hover {
-			margin: 3px 0 3px 0;
+			margin: 8px 0;
 			height: 30px;
 		}
 	</style>
@@ -143,8 +166,8 @@ Copyright (c) 2025 Jonathan Chiu -->
 				<li onclick="changeFrameSrc('music.html')"><i class="fa-solid fa-music"></i></li>
 				<!-- <hr /> -->
 				<hr class="clickable" onclick="changeFrameSrc('web-dock/about.html')" />
+				<!-- <li class="folded" onclick="changeFrameSrc('web-dock/about.html')"><i class="fa-solid fa-info"></i></li> -->
 				<li onclick="changeFrameSrc('website.html')"><i class="fa-solid fa-globe"></i></li>
-				<!-- <li class="folded"><i class="fa-solid fa-info"></i></li> -->
 			</ul>
 		</nav>
 	</main>
