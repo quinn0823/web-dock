@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
 
-    <meta name="keywords" content="Web Dock Bar">
+    <meta name="keywords" content="Web Dock">
     <meta name="author" content="Quinn0823">
     <meta name="description" content="It's used to quickly switch between pages.">
     <meta name="generator" content="Visual Studio Code">
@@ -10,20 +10,22 @@
     <meta name="theme-color" content="#99ccff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#6699cc" media="(prefers-color-scheme: dark)">
 
-    <meta property="og:title" content="Web Dock Bar">
+    <meta property="og:title" content="Web Dock">
     <meta property="og:type" content="GitHub-Page">
     <meta property="og:image" content="/favicon.ico">
     <meta property="og:description" content="It's used to quickly switch between pages." />
 
-    <base href="/web-dock-bar/">
     <link rel="icon" href="favicon.ico">
 
     <link rel="stylesheet" href="css/page.css">
 
+    <script src="https://quinn0823.github.io/universal/packages/fontawesome/js/solid.min.js" type="text/javascript"></script>
+    <script src="https://quinn0823.github.io/universal/packages/fontawesome/js/fontawesome.min.js" type="text/javascript"></script>
+
     <script src="js/page.js"></script>
-    <script src="js/font_awesome.js" crossorigin="anonymous"></script>
-    
-    <title>Web Dock Bar</title>
+    <!-- <script src="js/font_awesome.js"></script> -->
+
+    <title>Web Dock</title>
 </head>
 <body>
     <iframe id="frame" src="https://quinn0823.github.io"></iframe>
@@ -33,7 +35,7 @@
             <li><a onclick="urlChange('projects')"><i class="fa-solid fa-folder-tree"></i></a></li>
             <li><a onclick="urlChange('qs')"><i class="fa-solid fa-pen-ruler"></i></a></li>
             <li><a onclick="urlChange('music')"><i class="fa-solid fa-music"></i></a></li>
-            <li class='line'></li>
+            <li class='line'><a onclick="urlChange('about')"></i></a></li>
             <li><a onclick="urlChange('website')"><i class="fa-solid fa-globe"></i></a></li>
         </ul>
     </div>
