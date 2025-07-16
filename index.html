@@ -11,7 +11,7 @@ Copyright (c) 2025 Jonathan Chiu -->
 
 	<title>Web Dock</title>
 
-	<!-- <link rel="stylesheet" href="https://quinn0823.github.io/universal/styles/main.css" type="text/css" /> -->
+	<link rel="stylesheet" href="https://quinn0823.github.io/universal/styles/main.css" type="text/css" />
 	<!-- <link rel="stylesheet" href="https://quinn0823.github.io/universal/styles/layout.css" type="text/css" /> -->
 	<link rel="icon" href="https://quinn0823.github.io/universal/images/logos/logo-transparent-fill.png" type="image/png" />
 	<link rel="apple-touch-icon" href="https://quinn0823.github.io/universal/images/logos/logo-white-fit.png" type="image/png" />
@@ -20,9 +20,8 @@ Copyright (c) 2025 Jonathan Chiu -->
 		:root {
 			--blue-dark: #6699cc;
 			--blue-light: #99ccff;
-			--spacing-length: 5px;
-			--border-width-length: 3px;
-			--transition-duration-time: 0.25s;
+			--spacing: 5px;
+			--border-width: 3px;
 		}
 
 		body {
@@ -41,32 +40,32 @@ Copyright (c) 2025 Jonathan Chiu -->
 
 		.dock ul {
 			position: fixed;
-			bottom: var(--spacing-length);
+			bottom: var(--spacing);
 			left: 0;
 			right: 0;
 			margin: 0 auto;
-			padding: 0 var(--spacing-length);
+			padding: 0 var(--spacing);
 			display: grid;
 			grid-auto-flow: column;
-			column-gap: var(--spacing-length);
+			column-gap: var(--spacing);
 			row-gap: 0;
 			list-style: none;
 			width: fit-content;
 			height: 46px;
 			border-radius: 18px;
-			border: var(--border-width-length) solid var(--blue-dark);
+			border: var(--border-width) solid var(--blue-dark);
 			background-color: var(--blue-light);
 		}
 
 		.dock li {
-			margin: var(--spacing-length) 0;
+			margin: var(--spacing) 0;
 			width: 30px;
 			height: 30px;
-			border: var(--border-width-length) solid var(--blue-dark);
+			border: var(--border-width) solid var(--blue-dark);
 			border-radius: 10px;
 			color: var(--blue-dark);
 			background-color: #fff;
-			transition: var(--transition-duration-time);
+			transition: var(--transition-duration);
 			cursor: pointer;
 			line-height: 30px;
 			text-align: center;
@@ -83,7 +82,7 @@ Copyright (c) 2025 Jonathan Chiu -->
 
 		.dock li.folded {
 			margin: 10px 0;
-			width: var(--border-width-length);
+			width: var(--border-width);
 			height: 26px;
 			overflow: hidden;
 			border: 0;
@@ -92,21 +91,21 @@ Copyright (c) 2025 Jonathan Chiu -->
 		}
 
 		.dock li.folded:hover {
-			margin: var(--spacing-length) 0;
+			margin: var(--spacing) 0;
 			width: 30px;
 			height: 30px;
-			border: var(--border-width-length) solid var(--blue-dark);
+			border: var(--border-width) solid var(--blue-dark);
 			border-radius: 10px;
 		}
 
 		.dock hr {
 			margin: 10px 0;
-			width: var(--border-width-length);
+			width: var(--border-width);
 			height: 26px;
 			border: 0;
 			border-radius: 1.5px;
 			background-color: var(--blue-dark);
-			transition: var(--transition-duration-time);
+			transition: var(--transition-duration);
 		}
 
 		.dock hr.clickable {
